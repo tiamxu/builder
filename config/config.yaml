@@ -1,0 +1,17 @@
+env: dev
+log_level: debug
+http_srv:
+  address: :8800
+  keep_alive: true
+  type: "aliyun"
+  ollama:
+    address: "http://192.168.1.228:11434"
+    llm_model: "qwen2.5:7b"
+    embedder_model: "nomic-embed-text:latest"
+    temperature: 0.8
+
+  aliyun:
+    base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+    api_key: "sk-dda0881c077849eea532a185e5731d28"
+    llm_model: "qwen-turbo"
+    embedding_model: "text-embedding-v3"
